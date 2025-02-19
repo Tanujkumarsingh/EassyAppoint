@@ -1,0 +1,316 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* padding: 20px; */
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007bff;
+  padding: 15px 30px;
+  color: white;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffdd57;
+}
+
+/* Form Container */
+.container {
+  background-color: white;
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+  text-align: center;
+  margin: auto;
+  margin-top: 8vh;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Title */
+.form-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+input {
+  width: 90%;
+  padding: 12px 20px;
+  padding-left: 40px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+input:focus {
+  border-color: #7d7dfe;
+  outline: none;
+  box-shadow: 0 0 5px rgba(125, 125, 235, 0.5);
+}
+
+/* Fixed Label Position */
+label {
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  background: white;
+  padding: 0 5px;
+  font-size: 1rem;
+  color: #7d7dfe;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Icons Inside Input Fields */
+.input-group i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7d7dfe;
+  font-size: 1.2rem;
+}
+
+/* Recover Password */
+.recover {
+  text-align: right;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.recover a {
+  text-decoration: none;
+  color: #7d7dfe;
+  transition: color 0.3s ease-in-out;
+}
+
+.recover a:hover {
+  color: #07001f;
+}
+
+/* Buttons */
+.btn {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  background: #7d7dfe;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #07001f;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* "Or" Divider */
+.or {
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: #666;
+}
+
+/* Social Media Icons */
+.icons {
+  text-align: center;
+}
+
+.icons i {
+  color: #7d7dfe;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 2px solid #dfe9f5;
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.icons i:hover {
+  background: #07001f;
+  color: white;
+  border-color: #7d7dfe;
+  transform: scale(1.1);
+}
+
+/* Sign-Up / Sign-In Toggle */
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+button {
+  color: #7d7dfe;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+button:hover {
+  text-decoration: underline;
+  color: #07001f;
+}
+/* Styling for ABC Container */
+#ABC {
+  background-color: white;
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease-in-out;
+  text-align: center;
+  margin: auto;
+  margin-top: 8vh;
+}
+
+#ABC h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+#ABC h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+#ABC h3 {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+#ABC button {
+  display: block;
+  margin: 10px auto;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 80%;
+  background: #7d7dfe;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+  margin-bottom: 10px;
+}
+
+#ABC button:hover {
+  background: #07001f;
+  transform: scale(1.05);
+}
+
+#ABC button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  #ABC {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  #ABC h1 {
+    font-size: 1.8rem;
+  }
+
+  #ABC h2 {
+    font-size: 1.3rem;
+  }
+
+  #ABC h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .container {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+}
