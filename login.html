@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,7 +36,7 @@
 
     <div class="container" id="signUpClient" style="display: none;">
       <h1 class="form-title">Register As Client</h1>
-      <form action="register.php" method="post">
+      <form action="auth/register_client.php" method="post">
         <div class="input-group">
           <i class="fa-solid fa-user"></i>
           <input
@@ -104,7 +108,7 @@
     <!-- company Registration -->
     <div class="container" id="signUpCompany" style="display: none;">
       <h1 class="form-title">Register As Coppany</h1>
-      <form action="register.php" method="post">
+      <form action="auth/register_company.php" method="post">
         <div class="input-group">
           <i class="fa-solid fa-user"></i>
           <input
@@ -188,7 +192,7 @@
     <!-- for sign in past user which already has an account -->
     <div class="container" id="signIn">
       <h1 class="form-title">Sign In</h1>
-      <form action="login.php" method="post">
+      <form action="auth/login.php" method="post">
         <div class="input-group">
           <i class="fa-solid fa-envelope"></i>
           <input
