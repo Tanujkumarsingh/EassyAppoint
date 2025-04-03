@@ -314,3 +314,70 @@ button:hover {
     font-size: 1.5rem;
   }
 }
+
+
+/* Textarea Styling */
+textarea {
+  width: 90%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Textarea Focus Effect */
+textarea:focus {
+  border-color: #7d7dfe;
+  outline: none;
+  box-shadow: 0 0 5px rgba(125, 125, 235, 0.5);
+}
+#addButton {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+#addButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+#addButton:active {
+  transform: scale(0.95);
+}
+/* Adjust textarea padding to make space for icon */
+.input-group textarea {
+  padding-left: 40px; /* Space for the icon */
+  min-height: 100px; /* Ensures enough space */
+  resize: vertical; /* Allows resizing */
+}
+
+/* General icon styling */
+.input-group i {
+  position: absolute;
+  left: 10px;
+  top: 22px; /* Moves the icon up */
+  color: #7d7dfe;
+  font-size: 1.2rem;
+}
+
+/* Ensure the icon stays in place for textareas */
+.input-group {
+  position: relative;
+}
+
+.input-group textarea {
+  padding-top: 12px; /* Ensures text starts at the right position */
+  line-height: 1.5;
+}
